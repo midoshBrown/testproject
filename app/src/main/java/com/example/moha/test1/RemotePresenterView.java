@@ -6,5 +6,5 @@ package com.example.moha.test1;
 
 public interface RemotePresenterView {
     // Declaration of the template function for the interface
-    public void UpdateMyTextView(String mystr);
+    public void UpdateMyTextView(String s);
 }

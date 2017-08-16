@@ -19,7 +19,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         if (remoteMessage.getData().size() > 0) {
            // Log.d("midosh1", "Message data payload: " + remoteMessage.getData());
             System.out.println("midosh1 " + remoteMessage.getData().get("new"));
-            MainActivity.rmMsg =remoteMessage.getData().get("new");
+           // MainActivity.rmMsg =remoteMessage.getData().get("new");
 
 
         }
