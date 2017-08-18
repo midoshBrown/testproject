@@ -1,4 +1,4 @@
-package com.example.moha.test1;
+package com.example.moha.test1.HelperClasses;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;

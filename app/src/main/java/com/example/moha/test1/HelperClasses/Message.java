@@ -1,4 +1,4 @@
-package com.example.moha.test1;
+package com.example.moha.test1.HelperClasses;
 
 /**
  * Created by MOHA on 14-Aug-17.

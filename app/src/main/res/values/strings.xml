@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Test1</string>
-    <string name="submit">Submit</string>
+    <string name="send_message">send message</string>
 </resources>
