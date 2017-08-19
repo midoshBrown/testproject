@@ -23,7 +23,8 @@ public class MainActivity extends AppCompatActivity implements OnResultFromPrese
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        presenter=new Presenter(this);
+        presenter=new Presenter();
+        presenter.setOnResultFromPresenterListener(this);
 
 
         txv1=(TextView) findViewById(R.id.txv1);

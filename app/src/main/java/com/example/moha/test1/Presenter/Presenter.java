@@ -17,12 +17,18 @@ public class Presenter implements OnDatabaseAccessListener,OnSubmitFromViewListe
     //private DatabaseRepository database;
     private OnDatabaseAccessListener dbAccess;
     private DatabaseReference myRef;
-    private OnResultFromPresenterListener view;
+    private OnResultFromPresenterListener onResultFromPresenterListener;
+
+    public void setOnResultFromPresenterListener(OnResultFromPresenterListener onResultFromPresenterListener) {
+        this.onResultFromPresenterListener = onResultFromPresenterListener;
+    }
 
 
-    public Presenter(OnResultFromPresenterListener view) {
+
+
+    public Presenter() {
        // this.database=new DatabaseRepository();
-        this.view=view;
+        //this.onResultFromPresenterListener=view;
         myRef = FirebaseDatabase.getInstance().getReference().child("message/update");
         myRef.addValueEventListener(this);
       //  this.dbAccess=dbAccess;
@@ -30,7 +36,7 @@ public class Presenter implements OnDatabaseAccessListener,OnSubmitFromViewListe
     }
     public void loadMsg(String s){
         //s=dbAccess.getMsg();
-        view.showMsg(s);
+        onResultFromPresenterListener.showMsg(s);
 
     }
 
